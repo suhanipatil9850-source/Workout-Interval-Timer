@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Workout Lap Timer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <h1>Workout Lap Timer</h1>
+    <p class="hint">Use Start, record laps, then Stop when done.</p>
+
+    <div class="time" id="timeDisplay">00:00.00</div>
+
+    <div class="controls">
+      <button id="startBtn">Start</button>
+      <button id="lapBtn" disabled>Lap</button>
+      <button id="stopBtn" disabled>Stop</button>
+      <button id="resetBtn">Reset</button>
+    </div>
+
+    <section class="laps">
+      <h2>Laps</h2>
+      <ul id="lapList"></ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
